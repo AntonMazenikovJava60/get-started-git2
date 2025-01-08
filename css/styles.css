@@ -1,9 +1,41 @@
-.box{
-    background-color: beige;
-    border: 3px solid lightgray;
+.boxes{
+    border: 3px solid red;
+    width: 950px;
+    height: 500px;
 }
-.text{
-    padding: 0;
-    margin: 20px;
-    border: 3px solid darkblue;
+.box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 200px;
+
+}
+.box-one{
+    background-color: blue;
+    left: 165px;
+    top: 110px;
+    z-index: -4;
+}
+.box-two{
+    background-color: black;
+    left:370px;
+    top: -90px;
+    z-index: -2;
+}
+.box-fhree{
+    background-color: red;
+    left: 575px;
+    top: -290px;
+}
+.box-four{
+    background-color: yellow;
+    left: 272px;
+    top: -390px;
+    z-index: -3;
+}
+.box-five{
+    background-color: green;
+    left: 478px;
+    top: -590px;
+    z-index: -1;
 }
