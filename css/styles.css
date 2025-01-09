@@ -1,24 +1,24 @@
-.container{
+.cell{
+width: 65px;
+height: 65px;
+background-color: aliceblue;
+border: 1px solid grey;
+
+}
+.row_odd, .row_even {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100vh;   
-    
+    justify-content: center;
 }
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: gold;
-    border: 3px solid gray;
-    margin: 15px;
-    flex-grow:1;
- }
-.box-one{
-    flex-grow: 0;
+.row_odd div:nth-child(even){
+    background-color: black;
 }
-.box-two{
-    flex-grow: 2;
-    align-self: flex-end;
-    flex-shrink: 2;
+.row_even div:nth-child(odd){
+    background-color: black;
+}
+body{
+    height: 100vh;
+    align-content: center;
+
+
+
 }
